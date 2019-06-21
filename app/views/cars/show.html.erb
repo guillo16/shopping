@@ -1,3 +1,5 @@
 welcome to show
 <img src="<%= @car.photo1 %> " alt="">
 <%= @car.name %>
+<p>Amount: <%= humanized_money_with_symbol(@car.price) %></p>
+

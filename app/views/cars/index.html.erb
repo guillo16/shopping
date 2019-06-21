@@ -4,6 +4,7 @@
 
 <img src="<%= car.photo1 %>" alt="car photo">
 <h2><%= car.name %></h2>
+<p>Amount: <%= humanized_money_with_symbol(car.price) %></p>
 <%= link_to 'mas', car_path(car) %>
 <% end %>
 
