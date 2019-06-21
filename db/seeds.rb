@@ -5,3 +5,34 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts 'clering database'
+
+Car.destroy_all
+
+puts 'creating cars'
+
+Car.create!(
+  name:,
+  sku:,
+  photo1:,
+  category:,
+  brand:,
+  price:,
+  )
+Car.create!(
+  name:,
+  sku:,
+  photo1:,
+  category:,
+  brand:,
+  price:,
+  )
+# Car.create!(
+#   name:,
+#   sku:,
+#   photo1:,
+#   category:,
+#   brand:,
+# price:,
+#   )
+puts 'finished'
