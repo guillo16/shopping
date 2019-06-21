@@ -17,6 +17,7 @@ Car.create!(
   photo1:"https://images.unsplash.com/photo-1536332016596-dc50468cbf41?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
   category:"luxury",
   brand: "lambo",
+  price: "3000",
 
   )
 Car.create!(
@@ -25,6 +26,7 @@ Car.create!(
   photo1:"https://images.unsplash.com/photo-1537758239362-40eda0496bc9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80",
   category:"exclusive",
   brand:"ferrari",
+  price: "4000",
 
   )
 # Car.create!(
