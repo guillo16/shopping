@@ -1,17 +1,18 @@
-<h1>Purchase of teddy <%= @car.sku %></h1>
-<%= form_tag car_payments_path(@car) do %>
+<h1>Purchase of car <%= @order.car_sku %></h1>
+<%= @order.car.photo1 %>
+<%= form_tag order_payments_path(@order) do %>
   <article>
     <label class="amount">
-      <span>Price: <%= humanized_money_with_symbol(@car.price) %></span>
+      <span>Amount: <%= humanized_money_with_symbol(@order.amount) %></span>
     </label>
   </article>
 
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
     data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-    data-name="My Teddy"
+    data-name="My car"
     data-email="<%= current_user.email %>"
-    data-description="Teddy <%= @car.sku %>"
-    data-amount="<%= @car.amount_cents %>"
-    data-currency="<%= @car.amount.currency %>"></script>
+    data-description="car <%= @order.car_sku %>"
+    data-amount="<%= @order.amount_cents %>"
+    data-currency="<%= @order.amount.currency %>"></script>
 
 <% end %>
