@@ -1,0 +1,38 @@
+.banner {
+  padding: 250px 0;
+  background-size: cover;
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .button {
+     color: white;
+     padding: 15px 20px;
+     background-color: blue;
+     font-weight: bold;
+     border-radius: 6px;
+
+
+  }
+}
+
+
+
+@media (min-width: 100px) and (max-width: 675px) {
+  .banner {
+    padding: 150px 0;
+    background-size: cover;
+    text-align: center;
+     h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+
+  }
+}
